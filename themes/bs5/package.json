@@ -1,0 +1,28 @@
+{
+  "comments": {
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "project",
+      "alpine": "project",
+      "animate.css": "project",
+      "bootstrap": "project",
+      "prop-types": "project",
+      "react": "project",
+      "react-dom": "project",
+      "react-router-dom": "project"
+    },
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "alpine": "*",
+    "animate.css": "^4.1.1",
+    "bootstrap": "5.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {},
+  "name": "bs5",
+  "version": "0.1.0"
+}
