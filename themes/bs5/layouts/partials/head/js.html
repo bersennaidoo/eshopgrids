@@ -5,7 +5,7 @@
 <script defer src="/js/hero.js"></script>
 <script defer src="/js/netlify/netlify-identity-widget.js"></script>
 
-{{- with resources.Get "js/vendor/react/index.tsx" }}
+{{- with resources.Get "js/vendor/react/index.jsx" }}
   {{- if eq hugo.Environment "development" }}
     {{- with . | js.Build  }}
       <script defer src="{{ .RelPermalink }}"></script>

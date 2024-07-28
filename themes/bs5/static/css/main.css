@@ -1461,7 +1461,7 @@ top: -1px;
   color: #fff !important;
   font-weight: 500;
   font-size: 14px;
-  background-color: #081828 !important;
+  background-color: #34d299 !important;
 }
 
 .header .topbar .top-left .menu-top-link .select-position select:focus {
@@ -3239,7 +3239,7 @@ top: 2px;
 }
 
 .shipping-info .media-body span {
-  font-size: 13px;
+  font-size: 11px;
   margin-top: 2px;
   color: #777;
 }
