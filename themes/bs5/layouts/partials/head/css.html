@@ -1,4 +1,4 @@
-{{- with resources.Get "css/main.css" }}
+{{- with resources.Get "bootstrap/bootstrap-custom.scss" | toCSS }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{- else }}
@@ -7,3 +7,8 @@
     {{- end }}
   {{- end }}
 {{- end }}
+
+<link rel="stylesheet" href="/css/LineIcons.3.0.css" />
+<link rel="stylesheet" href="/css/tiny-slider.css" />
+<link rel="stylesheet" href="/css/glightbox.min.css" />
+<link rel="stylesheet" href="/css/main.css" />
