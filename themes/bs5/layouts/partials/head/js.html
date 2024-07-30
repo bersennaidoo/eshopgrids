@@ -4,16 +4,3 @@
 <script defer src="/js/main.js"></script>
 <script defer src="/js/hero.js"></script>
 <script defer src="/js/netlify/netlify-identity-widget.js"></script>
-
-{{- with resources.Get "js/vendor/react/index.jsx" }}
-  {{- if eq hugo.Environment "development" }}
-    {{- with . | js.Build  }}
-      <script defer src="{{ .RelPermalink }}"></script>
-    {{- end }}
-  {{- else }}
-    {{- $opts := dict "minify" true }}
-    {{- with . | js.Build $opts | fingerprint }}
-      <script defer src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
-    {{- end }}
-  {{- end }}
-{{- end }}
